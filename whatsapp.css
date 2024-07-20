@@ -1,0 +1,69 @@
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    top: 15%;
+    margin-right: 50px;
+    ;
+}
+
+.float:hover {
+    text-decoration: none;
+    color: #25d366;
+    background-color: #fff;
+}
+
+.my-float {
+    margin-top: 16px;
+}
+
+.float {
+    animation: bounce 1s infinite ease-in-out;
+}
+
+@keyframes bounce {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    30%,
+    50%,
+    70% {
+        transform: translateY(-10px);
+        /* Ajusta el valor para la distancia de rebote */
+    }
+}
+
+.right-menu {
+    font-family: monospace;
+    /* Fuente monoespaciada para alineación uniforme */
+    position: relative;
+    /* Posicionamiento relativo para el contenedor */
+}
+
+.right-menu span {
+    display: inline-block;
+    /* Convertir cada letra en un bloque */
+    animation: escribir 0.5s steps(1, end) forwards;
+    /* Animación por letra */
+}
+
+@keyframes escribir {
+    from {
+        width: 0;
+        /* Letra inicialmente sin ancho */
+    }
+    to {
+        width: auto;
+        /* Letra con ancho completo al final */
+    }
+}
